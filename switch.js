@@ -30,4 +30,3 @@ switch (amount) {
   default:
     console.log("There is no 100 Amount");
 }
-// 19 number module er 8 number ta ses 9 number ta start
