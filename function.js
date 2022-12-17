@@ -41,4 +41,3 @@ const dividedFunction = (num1, num2) => {
   console.log(result);
 };
 dividedFunction(100, 2);
-// 19 number module er 4 number ta ses 5 number ta start
