@@ -35,5 +35,3 @@ for (let i = 0; i < numberArray.length; i++) {
   }
   console.log(numberArray[i]);
 }
-
-// 19 number module er 7 number ta ses 8 number ta start
