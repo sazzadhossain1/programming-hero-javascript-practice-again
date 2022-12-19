@@ -127,8 +127,31 @@ function loopFunction(number) {
 const resultLoopFunction = loopFunction(10);
 console.log(resultLoopFunction);
 
-// Practice home work
-//-------------------
-// 1. celcius to faren heit (celcius)
-// 2. A+ greating sestem
-// 3. simple interest calculation formula
+console.log("========== Sum Element from the array ==========");
+
+const number = [10, 20, 30, 40, 50, 60, 70];
+
+function sumArrayNumber(num) {
+  let sum = 0;
+  for (let i = 0; i < num.length; i++) {
+    const element = num[i];
+    sum = sum + element;
+  }
+  console.log(sum);
+}
+sumArrayNumber(number);
+
+console.log("======== Get Bigest number from the array ========");
+
+function getBigNumber(num) {
+  let getBigNumber = 0;
+  for (let i = 0; i < num.length; i++) {
+    const element = num[i];
+    if (element > getBigNumber) {
+      getBigNumber = element;
+    }
+  }
+  console.log(getBigNumber);
+}
+
+getBigNumber(number);

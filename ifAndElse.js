@@ -90,4 +90,3 @@ const findFunction = (businessMan, minister, army) => {
 };
 
 console.log(findFunction(500, 300, 1000));
-// 21 number module er 2 number ta ses 3 number ta start
