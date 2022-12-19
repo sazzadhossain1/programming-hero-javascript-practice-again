@@ -56,4 +56,3 @@ function isLeapYear(year) {
 
 const myYear = 2100;
 console.log(isLeapYear(myYear));
-// 20 number module er 7 number ta ses 8 number ta start

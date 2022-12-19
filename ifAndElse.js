@@ -53,3 +53,41 @@ if ((gotJob === true && home === true) || moneySave > 200000) {
 } else {
   console.log("I don't get merride");
 }
+
+console.log(
+  "------------------------------------------------------------------------------=-----------NewPractice----------------------------------------------------------------------------------------------------------------------------------------------------------"
+);
+const business = 450;
+const minister = 550;
+const army = 600;
+
+if (business > minister) {
+  console.log("Business person er pola is bigger");
+} else {
+  console.log("Minister er pols is bigger");
+}
+
+if (business > minister && business > army) {
+  console.log("Business is bigger");
+} else if (minister > business && minister > army) {
+  console.log("Minister is Bigger");
+} else if (army > business && army > minister) {
+  console.log("Army is Bigger");
+}
+
+const max = Math.max(business, minister, army);
+console.log(max);
+
+const findFunction = (businessMan, minister, army) => {
+  if (businessMan > minister && businessMan > army) {
+    console.log("Business man is biggehr");
+  } else if (minister > businessMan && minister > army) {
+    console.log("Minister is bigger");
+  } else if (army > businessMan && army > minister) {
+    console.log("Army is bigger then all");
+  }
+  return businessMan, minister, army;
+};
+
+console.log(findFunction(500, 300, 1000));
+// 21 number module er 2 number ta ses 3 number ta start
