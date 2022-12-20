@@ -213,3 +213,30 @@ console.log("=========== Math.max and Math.min ==========");
 
 console.log(Math.max(...number));
 console.log(Math.min(...number));
+
+console.log("============= xxxxxxxxxxxx =============");
+
+// Find Max Number //
+// function maxNumber(num) {
+//   let element = num[0];
+//   for (let i = 0; i < num.length; i++) {
+//     if (element < num[i]) {
+//       element = num[i];
+//     }
+//   }
+//   console.log(element);
+// }
+// maxNumber(number);
+
+// Find Min Number //
+function minNumber(num) {
+  let element = num[0];
+  for (let i = 0; i < num.length; i++) {
+    if (element > num[i]) {
+      element = num[i];
+    }
+  }
+  console.log(element);
+}
+
+minNumber(number);
