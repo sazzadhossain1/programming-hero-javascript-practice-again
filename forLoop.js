@@ -64,5 +64,3 @@ function lergestElements(num) {
 }
 
 lergestElements(number);
-
-// 21 number module er 4 number ta ses 5 number ta start

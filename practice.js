@@ -155,3 +155,61 @@ function getBigNumber(num) {
 }
 
 getBigNumber(number);
+
+console.log("==================================================");
+
+function sumFunction(num) {
+  let sum = 0;
+  for (let i = 0; i < num.length; i++) {
+    const element = num[i];
+    sum = sum + element;
+  }
+  console.log(sum);
+}
+sumFunction(number);
+console.log("==================================================");
+
+function bigestFunction(num) {
+  let getBigNumber = 0;
+  for (let i = 0; i < num.length; i++) {
+    const element = num[i];
+    if (element > getBigNumber) {
+      getBigNumber = element;
+    }
+  }
+  console.log(getBigNumber);
+}
+bigestFunction(number);
+
+console.log("=============== Find min number ===============");
+
+const minimumNumber = [10, 2, 20, 30, 40, 50, 60, 70];
+
+function minNumber(array) {
+  let min = array[0];
+  for (let i = 0; i < array.length; i++) {
+    if (min > array[i]) {
+      min = array[i];
+    }
+  }
+  console.log(min);
+}
+minNumber(minimumNumber);
+
+console.log("========== Practice More ============");
+const getMinumeNumber = (arr) => {
+  let min = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    if (min > arr[i]) {
+      min = arr[i];
+    }
+  }
+  console.log(min);
+};
+
+getMinumeNumber(minimumNumber);
+
+console.log("=========== Math.max and Math.min ==========");
+
+console.log(Math.max(...number));
+console.log(Math.min(...number));
