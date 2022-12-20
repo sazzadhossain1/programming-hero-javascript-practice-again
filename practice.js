@@ -240,3 +240,43 @@ function minNumber(num) {
 }
 
 minNumber(number);
+
+console.log("=========== Remove Duplicate Number ============");
+
+const names = [
+  "sazzad",
+  "hossain",
+  "tomal",
+  "yeasin",
+  "sazzad",
+  "yeasin",
+  "tomal",
+];
+
+function removeDuplicate(nam) {
+  const unique = [];
+
+  for (let element of nam) {
+    if (unique.indexOf(element) === -1) {
+      unique.push(element);
+    }
+  }
+  console.log(unique);
+}
+
+removeDuplicate(names);
+
+console.log("========== Regular for loop ==========");
+
+function remove(nam) {
+  const unique = [];
+  for (let i = 0; i < nam.length; i++) {
+    if (unique.indexOf(nam[i]) === -1) {
+      unique.push(nam[i]);
+    }
+  }
+
+  return unique;
+}
+
+console.log(remove(names));

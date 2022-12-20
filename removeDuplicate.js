@@ -19,4 +19,3 @@ function removeDuplicate(name) {
 }
 
 removeDuplicate(names);
-// 22 number module er 1 number ta ses 2 number ta start
