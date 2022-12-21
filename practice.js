@@ -280,3 +280,159 @@ function remove(nam) {
 }
 
 console.log(remove(names));
+
+/////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+
+// Sum Function
+function sumFunction(num) {
+  let sum = 0;
+  for (let i = 0; i < num.length; i++) {
+    const element = num[i];
+    sum = sum + element;
+  }
+  console.log(sum);
+}
+sumFunction(number);
+
+// Get biggest Number
+function bigFun(num) {
+  let bigestNumber = 0;
+  for (let i = 0; i < num.length; i++) {
+    let element = num[i];
+    if (bigestNumber < element) {
+      bigestNumber = element;
+    }
+  }
+  console.log(bigestNumber);
+}
+bigFun(number);
+
+// Get Minume Number
+function minFunction(num) {
+  let element = num[0];
+  for (let i = 0; i < num.length; i++) {
+    if (element > num[i]) {
+      element = num[i];
+    }
+  }
+  console.log(element);
+}
+minFunction(number);
+
+// Remove Duplicate Number
+function reDup(nam) {
+  const unique = [];
+  for (let i = 0; i < nam.length; i++) {
+    if (unique.indexOf(nam[i]) === -1) {
+      unique.push(nam[i]);
+    }
+  }
+  console.log(unique);
+}
+reDup(names);
+
+///////////////////////////////////////////
+
+for (let i = 1; i <= 50; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("FooBar");
+  } else if (i % 3 === 0) {
+    console.log("Foo");
+  } else if (i % 5 === 0) {
+    console.log("bar");
+  } else {
+    console.log(i);
+  }
+}
+
+/////////////////////////////////////////////////////////
+///////////////////////////////////////////////
+/////////////////////////////
+
+// for (let i = 7; i <= 19; i++) {
+//   if (i % 2 === 0) {
+//     console.log(i);
+//   }
+// }
+
+// let oddNumber = 1;
+// while (oddNumber <= 10) {
+//   console.log(oddNumber);
+//   oddNumber = oddNumber + 2;
+// }
+
+// for (let i = 1; i <= 10; i = i + 2) {
+//   console.log(i);
+// }
+
+function getBig(num) {
+  let big = 0;
+  for (let i = 0; i < num.length; i++) {
+    const element = num[i];
+    if (big < element) {
+      big = big + element;
+    }
+  }
+  console.log(big);
+}
+getBig(number);
+
+console.log("========= Convert feet to inch =========");
+
+function feetToInch(feet) {
+  const perInch = 12;
+  let totalInch = perInch * feet;
+  console.log(totalInch);
+}
+feetToInch(2);
+
+console.log("=========== Get Book Page ===========");
+
+function pageRequirements(firstB, secondB, thirdB) {
+  const firstBookPage = 100;
+  const totalPage = firstBookPage * firstB;
+  console.log(totalPage);
+
+  const secondBookPage = 200;
+  const totalPage2 = secondBookPage * secondB;
+  console.log(totalPage2);
+
+  const thirdBookPage = 300;
+  const totalPage3 = thirdBookPage * thirdB;
+  console.log(totalPage3);
+}
+
+pageRequirements(5, 2, 100);
+
+console.log("======= Best Friend Get Big Name ========");
+
+function bestFriend(fri) {
+  let bigName = fri[0];
+
+  for (let i = 0; i < fri.length; i++) {
+    const element = fri[i];
+    if (bigName.length < element.length) {
+      bigName = element;
+    }
+  }
+  console.log(bigName);
+}
+
+const friend = ["sazzad", "hossain", "tomal"];
+bestFriend(friend);
+
+console.log("========= Stope loop when get -1 number =======");
+function onlyPositive(num) {
+  for (let n of num) {
+    if (n === -1) {
+      break;
+    } else {
+      console.log(n);
+    }
+  }
+}
+const numbers = [12, 23, 2, 11, -1, 45, 56, 67];
+onlyPositive(numbers);
+// 22_5 number module er 1 number ta ses 2 number ta start

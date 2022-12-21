@@ -9,5 +9,3 @@ function reverseString(text) {
 }
 
 console.log(reverseString(greetings));
-
-// 22 number module er 3 number ta ses 4 number ta start
