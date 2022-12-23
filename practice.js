@@ -435,4 +435,4 @@ function onlyPositive(num) {
 }
 const numbers = [12, 23, 2, 11, -1, 45, 56, 67];
 onlyPositive(numbers);
-// 22_5 number module er 1 number ta ses 2 number ta start
+// 24  number module er 0 number ta ses 1 number ta start
