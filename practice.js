@@ -435,3 +435,7 @@ function onlyPositive(num) {
 }
 const numbers = [12, 23, 2, 11, -1, 45, 56, 67];
 onlyPositive(numbers);
+
+let name = "sazzad";
+let nam = name.toUpperCase();
+console.log(nam);
