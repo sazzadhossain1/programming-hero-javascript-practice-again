@@ -73,4 +73,3 @@ h1.style.borderRadius = "50px";
 p.style.backgroundColor = "white";
 p.style.padding = "20px";
 p.style.borderRadius = "20px";
-// 24  number module er 6 number ta ses 7 number ta start
