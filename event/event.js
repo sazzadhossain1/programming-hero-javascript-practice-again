@@ -48,5 +48,3 @@ updateBtn.addEventListener("click", function () {
   getp.innerText = getValue;
   input.value = "";
 });
-
-// 25 number module er 4 number ta ses 5 number ta start
