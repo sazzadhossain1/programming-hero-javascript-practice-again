@@ -439,3 +439,21 @@ onlyPositive(numbers);
 let name = "sazzad";
 let nam = name.toUpperCase();
 console.log(nam);
+///////////////////////////////////////////////////////////
+// Event Delegate
+
+const addItem = document.querySelector(".add-item");
+addItem.addEventListener("click", function () {
+  const createLi = document.createElement("li");
+  createLi.classList.add("item");
+  createLi.innerText = "This is a new Li";
+
+  const getUl = document.querySelector("#ul-parent");
+  getUl.appendChild(createLi);
+});
+
+// Remove li items
+const getUl = document.querySelector("#ul-parent");
+getUl.addEventListener("click", function (e) {
+  e.target.parentNode.removeChild(e.target);
+});

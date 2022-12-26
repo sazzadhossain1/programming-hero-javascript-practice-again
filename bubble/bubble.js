@@ -1,5 +1,6 @@
-document.querySelector("#second-item").addEventListener("click", function () {
+document.querySelector("#second-item").addEventListener("click", function (e) {
   console.log("second item clicked");
+  e.stopImmediatePropagation();
 });
 
 // ul
@@ -15,4 +16,3 @@ document
   .addEventListener("click", function () {
     console.log("section clicked");
   });
-// 25 number module er 7 number ta ses 8 number ta start
