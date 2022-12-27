@@ -18,4 +18,3 @@ const getUl = document.querySelector("#item-container");
 getUl.addEventListener("click", function (e) {
   e.target.parentNode.removeChild(e.target);
 });
-// 25 number module er 8 number ta ses 9 number ta start

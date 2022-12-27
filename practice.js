@@ -457,3 +457,34 @@ const getUl = document.querySelector("#ul-parent");
 getUl.addEventListener("click", function (e) {
   e.target.parentNode.removeChild(e.target);
 });
+
+/////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+const button1 = document.querySelector(".button-1");
+button1.addEventListener("click", function () {
+  const input1 = document.querySelector(".input-1");
+  const inputValue = input1.value;
+  console.log(inputValue);
+  input1.value = "";
+});
+
+const button2 = document.querySelector(".button-2");
+button2.addEventListener("click", function () {
+  const input2 = document.querySelector(".input-2");
+  const input2Value = input2.value;
+  console.log(input2Value);
+});
+
+const button3 = document.querySelector(".button-3");
+button3.addEventListener("click", function () {
+  const input1 = document.querySelector(".input-1");
+  const input1Value = input1.value;
+
+  const input2 = document.querySelector(".input-2");
+  const input2Value = input2.value;
+
+  const sentense = input1Value + " " + input2Value;
+  console.log(sentense);
+});
