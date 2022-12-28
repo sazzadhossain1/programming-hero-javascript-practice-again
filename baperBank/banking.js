@@ -1,27 +1,3 @@
-// document.querySelector("#deposit-button");
-// .addEventListener("click", function () {
-//   // Get the amount deposited
-//   const depositinput = document.querySelector("#deposit-input");
-//   const newDepositAmountText = depositinput.value;
-//   const newDepositAmount = parseFloat(newDepositAmountText);
-//   console.log(newDepositAmount);
-
-//   ///
-//   const depositTotal = document.querySelector("#deposit-total");
-//   const previousDepositText = depositTotal.innerText;
-
-//   const previousDepositAmount = parseFloat(previousDepositText);
-//   const newDeposittotal = previousDepositAmount + newDepositAmount;
-
-//   depositTotal.innerText = newDeposittotal;
-//   // Clear the deposit input field
-//   depositinput.value = "";
-// });
-
-///////////////////////////////////////////////////////
-///////////////////////////////////////////////////////
-//////////////////////////////////////////////////////
-
 document
   .querySelector("#deposit-button")
   .addEventListener("click", function () {
@@ -69,19 +45,30 @@ document
     const WithdrawInput = document.querySelector("#Withdraw-input");
     const WithdrawInputText = WithdrawInput.value;
     const WithdrawInputTextNumber = parseFloat(WithdrawInputText);
-    console.log(WithdrawInputTextNumber);
-
     WithdrawInput.value = "";
+    if (
+      WithdrawInput.value === " " ||
+      WithdrawInput.value === "" ||
+      WithdrawInputTextNumber !== parseFloat(WithdrawInputText)
+    ) {
+      alert("Please input the valided Number");
+    } else {
+      // Get previous withdraw
+      const previousWithdraw = document.querySelector("#withdraw-total");
+      const previousWithdrawText = previousWithdraw.innerText;
+      const previousWithdrawTextNumber = parseFloat(previousWithdrawText);
+      console.log(previousWithdrawTextNumber);
 
-    // Get previous withdraw
-    const previousWithdraw = document.querySelector("#withdraw-total");
-    const previousWithdrawText = previousWithdraw.innerText;
-    const previousWithdrawTextNumber = parseFloat(previousWithdrawText);
-    console.log(previousWithdrawTextNumber);
+      previousWithdraw.innerText =
+        previousWithdrawTextNumber + WithdrawInputTextNumber;
 
-    previousWithdraw.innerText =
-      previousWithdrawTextNumber + WithdrawInputTextNumber;
+      // Add input amount to Blance part
+      const previousBlance = document.querySelector("#blance-total");
+      const previousBlanceText = previousBlance.innerText;
+      const previousBlanceTextNumber = parseFloat(previousBlanceText);
 
-    // minus fro Blance when i withdraw money
+      previousBlance.innerText =
+        previousBlanceTextNumber - WithdrawInputTextNumber;
+    }
   });
 // 26 number module er 6 number ta ses 7 number ta start
