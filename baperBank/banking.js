@@ -45,6 +45,7 @@ document
     const WithdrawInput = document.querySelector("#Withdraw-input");
     const WithdrawInputText = WithdrawInput.value;
     const WithdrawInputTextNumber = parseFloat(WithdrawInputText);
+    WithdrawInput.value = "";
     if (
       WithdrawInput.value === " " ||
       WithdrawInput.value === "" ||
@@ -52,8 +53,6 @@ document
     ) {
       alert("Please input the valid Number");
     } else {
-      WithdrawInput.value = "";
-
       // Get previous withdraw
       const previousWithdraw = document.querySelector("#withdraw-total");
       const previousWithdrawText = previousWithdraw.innerText;
