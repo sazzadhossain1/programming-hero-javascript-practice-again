@@ -45,14 +45,15 @@ document
     const WithdrawInput = document.querySelector("#Withdraw-input");
     const WithdrawInputText = WithdrawInput.value;
     const WithdrawInputTextNumber = parseFloat(WithdrawInputText);
-    WithdrawInput.value = "";
     if (
       WithdrawInput.value === " " ||
       WithdrawInput.value === "" ||
       WithdrawInputTextNumber !== parseFloat(WithdrawInputText)
     ) {
-      alert("Please input the valided Number");
+      alert("Please input the valid Number");
     } else {
+      WithdrawInput.value = "";
+
       // Get previous withdraw
       const previousWithdraw = document.querySelector("#withdraw-total");
       const previousWithdrawText = previousWithdraw.innerText;
