@@ -12,9 +12,33 @@ function updateProductNumber(product, isIncreasing, price, productTotal) {
   // Update case total
   const productTotalPrice = document.querySelector(productTotal);
   productTotalPrice.innerText = productNumber * price;
+
+  // calculate total
+  calculateTotal();
 }
 
 ////////////////////////////////////////////////////////
+function getInputValue(product) {
+  const productInput = document.querySelector(product + "-number");
+  const productNumber = parseInt(productInput.value);
+  return productNumber;
+}
+///--------------------
+function calculateTotal() {
+  const phoneTotal = getInputValue("#phone") * 1219;
+  const caseTotal = getInputValue("#case") * 59;
+  const subTotal = phoneTotal + caseTotal;
+  const tax = subTotal / 10;
+
+  const totalPrice = subTotal + tax;
+
+  // Update on the html
+  document.querySelector("#sub-total").innerText = subTotal;
+  document.querySelector("#tax-amount").innerText = tax;
+  document.querySelector("#total-price").innerText = totalPrice;
+}
+
+//////////////////////////////////////////////////////////
 
 // Phone increase decrease events
 document.querySelector("#phone-plus").addEventListener("click", function () {
@@ -37,4 +61,3 @@ document.querySelector("#case-plus").addEventListener("click", function () {
 document.querySelector("#case-minus").addEventListener("click", function () {
   updateProductNumber("#case", false, 59, "#case-total");
 });
-// 28 number module er 3 number ta ses 4 number ta start
