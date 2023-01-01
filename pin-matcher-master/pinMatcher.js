@@ -4,7 +4,6 @@ function getPin() {
   if (pinString.length === 4) {
     return pin;
   } else {
-    // console.log("got 3 digit and calling again", pin);
     return getPin();
   }
 }
@@ -22,6 +21,10 @@ document.querySelector("#key-padd").addEventListener("click", function (e) {
   if (isNaN(number)) {
     if (number === "C") {
       calcInput.value = "";
+    } else if (number === "<") {
+      calcInput.value = calcInput.value.slice(0, -1);
+
+      console.log(calcInput);
     }
   } else {
     const previousNumber = calcInput.value;
@@ -29,4 +32,24 @@ document.querySelector("#key-padd").addEventListener("click", function (e) {
     calcInput.value = newNumber;
   }
 });
-// 28 number module er 6 number ta ses 7 number ta start
+
+//////////////////////////////////////////////////
+
+function verifyPin() {
+  const pin = document.querySelector("#display-pin").value;
+  const typed = document.querySelector("#typed-numbers");
+  const typedNumbers = typed.value;
+
+  const successMessage = document.querySelector("#notify-success");
+  const failError = document.querySelector("#notify-fail");
+
+  if (pin === typedNumbers) {
+    successMessage.style.display = "block";
+    failError.style.display = "none";
+  } else {
+    failError.style.display = "block";
+    successMessage.style.display = "none";
+  }
+
+  typed.value = "";
+}

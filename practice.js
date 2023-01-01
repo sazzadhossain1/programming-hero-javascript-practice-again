@@ -442,49 +442,57 @@ console.log(nam);
 ///////////////////////////////////////////////////////////
 // Event Delegate
 
-const addItem = document.querySelector(".add-item");
-addItem.addEventListener("click", function () {
-  const createLi = document.createElement("li");
-  createLi.classList.add("item");
-  createLi.innerText = "This is a new Li";
+// const addItem = document.querySelector(".add-item");
+// addItem.addEventListener("click", function () {
+//   const createLi = document.createElement("li");
+//   createLi.classList.add("item");
+//   createLi.innerText = "This is a new Li";
 
-  const getUl = document.querySelector("#ul-parent");
-  getUl.appendChild(createLi);
-});
+//   const getUl = document.querySelector("#ul-parent");
+//   getUl.appendChild(createLi);
+// });
 
-// Remove li items
-const getUl = document.querySelector("#ul-parent");
-getUl.addEventListener("click", function (e) {
-  e.target.parentNode.removeChild(e.target);
-});
+// // Remove li items
+// const getUl = document.querySelector("#ul-parent");
+// getUl.addEventListener("click", function (e) {
+//   e.target.parentNode.removeChild(e.target);
+// });
 
 /////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////
 
-const button1 = document.querySelector(".button-1");
-button1.addEventListener("click", function () {
-  const input1 = document.querySelector(".input-1");
-  const inputValue = input1.value;
-  console.log(inputValue);
-  input1.value = "";
-});
+// const button1 = document.querySelector(".button-1");
+// button1.addEventListener("click", function () {
+//   const input1 = document.querySelector(".input-1");
+//   const inputValue = input1.value;
+//   console.log(inputValue);
+//   input1.value = "";
+// });
 
-const button2 = document.querySelector(".button-2");
-button2.addEventListener("click", function () {
-  const input2 = document.querySelector(".input-2");
-  const input2Value = input2.value;
-  console.log(input2Value);
-});
+// const button2 = document.querySelector(".button-2");
+// button2.addEventListener("click", function () {
+//   const input2 = document.querySelector(".input-2");
+//   const input2Value = input2.value;
+//   console.log(input2Value);
+// });
 
-const button3 = document.querySelector(".button-3");
-button3.addEventListener("click", function () {
-  const input1 = document.querySelector(".input-1");
-  const input1Value = input1.value;
+// const button3 = document.querySelector(".button-3");
+// button3.addEventListener("click", function () {
+//   const input1 = document.querySelector(".input-1");
+//   const input1Value = input1.value;
 
-  const input2 = document.querySelector(".input-2");
-  const input2Value = input2.value;
+//   const input2 = document.querySelector(".input-2");
+//   const input2Value = input2.value;
 
-  const sentense = input1Value + " " + input2Value;
-  console.log(sentense);
-});
+//   const sentense = input1Value + " " + input2Value;
+//   console.log(sentense);
+// });
+////////////////////////////////////////////////
+var calcInput = "Hello TecAdmin!";
+
+// Remove last character of string
+calcInput = calcInput.substring(0, calcInput.length - 1);
+
+// Print result string
+console.log(calcInput);
