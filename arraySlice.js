@@ -4,4 +4,3 @@ console.log(numberSlice);
 
 const numberSpliced = numbers.splice(4, 8);
 console.log(numberSpliced);
-// 29 number module er 5 number ta ses 6 number ta start

@@ -19,3 +19,5 @@ function removeDuplicate(name) {
 }
 
 removeDuplicate(names);
+
+console.log(new Set(names));
