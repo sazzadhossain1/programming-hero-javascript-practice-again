@@ -25,4 +25,3 @@ document.getElementById("add-friend").addEventListener("click", function () {
 
   container.appendChild(friendDiv);
 });
-// 31 number module er 1 number ta ses 2 number ta start
