@@ -367,80 +367,80 @@ for (let i = 1; i <= 50; i++) {
 //   console.log(i);
 // }
 
-function getBig(num) {
-  let big = 0;
-  for (let i = 0; i < num.length; i++) {
-    const element = num[i];
-    if (big < element) {
-      big = big + element;
-    }
-  }
-  console.log(big);
-}
-getBig(number);
+// function getBig(num) {
+//   let big = 0;
+//   for (let i = 0; i < num.length; i++) {
+//     const element = num[i];
+//     if (big < element) {
+//       big = big + element;
+//     }
+//   }
+//   console.log(big);
+// }
+// getBig(number);
 
-console.log("========= Convert feet to inch =========");
+// console.log("========= Convert feet to inch =========");
 
-function feetToInch(feet) {
-  const perInch = 12;
-  let totalInch = perInch * feet;
-  console.log(totalInch);
-}
-feetToInch(2);
+// function feetToInch(feet) {
+//   const perInch = 12;
+//   let totalInch = perInch * feet;
+//   console.log(totalInch);
+// }
+// feetToInch(2);
 
-console.log("=========== Get Book Page ===========");
+// console.log("=========== Get Book Page ===========");
 
-function pageRequirements(firstB, secondB, thirdB) {
-  const firstBookPage = 100;
-  const totalPage = firstBookPage * firstB;
-  console.log(totalPage);
+// function pageRequirements(firstB, secondB, thirdB) {
+//   const firstBookPage = 100;
+//   const totalPage = firstBookPage * firstB;
+//   console.log(totalPage);
 
-  const secondBookPage = 200;
-  const totalPage2 = secondBookPage * secondB;
-  console.log(totalPage2);
+//   const secondBookPage = 200;
+//   const totalPage2 = secondBookPage * secondB;
+//   console.log(totalPage2);
 
-  const thirdBookPage = 300;
-  const totalPage3 = thirdBookPage * thirdB;
-  console.log(totalPage3);
-}
+//   const thirdBookPage = 300;
+//   const totalPage3 = thirdBookPage * thirdB;
+//   console.log(totalPage3);
+// }
 
-pageRequirements(5, 2, 100);
+// pageRequirements(5, 2, 100);
 
-console.log("======= Best Friend Get Big Name ========");
+// console.log("======= Best Friend Get Big Name ========");
 
-function bestFriend(fri) {
-  let bigName = fri[0];
+// function bestFriend(fri) {
+//   let bigName = fri[0];
 
-  for (let i = 0; i < fri.length; i++) {
-    const element = fri[i];
-    if (bigName.length < element.length) {
-      bigName = element;
-    }
-  }
-  console.log(bigName);
-}
+//   for (let i = 0; i < fri.length; i++) {
+//     const element = fri[i];
+//     if (bigName.length < element.length) {
+//       bigName = element;
+//     }
+//   }
+//   console.log(bigName);
+// }
 
-const friend = ["sazzad", "hossain", "tomal"];
-bestFriend(friend);
+// const friend = ["sazzad", "hossain", "tomal"];
+// bestFriend(friend);
 
-console.log("========= Stope loop when get -1 number =======");
-function onlyPositive(num) {
-  for (let n of num) {
-    if (n === -1) {
-      break;
-    } else {
-      console.log(n);
-    }
-  }
-}
-const numbers = [12, 23, 2, 11, -1, 45, 56, 67];
-onlyPositive(numbers);
+// console.log("========= Stope loop when get -1 number =======");
+// function onlyPositive(num) {
+//   for (let n of num) {
+//     if (n === -1) {
+//       break;
+//     } else {
+//       console.log(n);
+//     }
+//   }
+// }
+// const numbers = [12, 23, 2, 11, -1, 45, 56, 67];
+// onlyPositive(numbers);
 
-let name = "sazzad";
-let nam = name.toUpperCase();
-console.log(nam);
-///////////////////////////////////////////////////////////
-// Event Delegate
+// let name = "sazzad";
+// let nam = name.toUpperCase();
+// console.log(nam);
+// ///////////////////////////////////////////////////////////
+// // Event Delegate
 
 // const addItem = document.querySelector(".add-item");
 // addItem.addEventListener("click", function () {
@@ -458,9 +458,9 @@ console.log(nam);
 //   e.target.parentNode.removeChild(e.target);
 // });
 
-/////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////
 
 // const button1 = document.querySelector(".button-1");
 // button1.addEventListener("click", function () {
@@ -488,11 +488,69 @@ console.log(nam);
 //   const sentense = input1Value + " " + input2Value;
 //   console.log(sentense);
 // });
-////////////////////////////////////////////////
-var calcInput = "Hello TecAdmin!";
+// ////////////////////////////////////////////////
+// var calcInput = "Hello TecAdmin!";
 
-// Remove last character of string
-calcInput = calcInput.substring(0, calcInput.length - 1);
+// // Remove last character of string
+// calcInput = calcInput.substring(0, calcInput.length - 1);
 
-// Print result string
-console.log(calcInput);
+// // Print result string
+// console.log(calcInput);
+
+// //////////////////////////////////////////////////////
+// //////////////////////////////////////////
+// /////////////////////////////
+
+// document.getElementById("create-li").addEventListener("click", function () {
+//   const ulParenId = document.getElementById("ul-paren-id");
+//   const li = document.createElement("li");
+//   li.classList.add("li-item");
+//   li.innerText = "This is new List item";
+//   ulParenId.appendChild(li);
+// });
+
+// // document.getElementById("ul-paren-id").addEventListener("click", function (e) {
+// //   e.target.parentNode.removeChild(e.target);
+// // });
+
+// document.getElementById("remove-li").addEventListener("click", function (e) {
+//   const liItem = document.querySelector(".li-item");
+//   liItem.parentNode.removeChild(liItem);
+// });
+// const colorH1 = document.querySelector(".color");
+// colorH1.style.color = "red";
+
+// ///////////////////////////////////////////
+
+// // update input filed's amount
+// const btn = document.getElementById("increase-button");
+// btn.addEventListener("click", function () {
+//   const numberInput = document.getElementById("number-input");
+
+//   if (numberInput.value < 5) {
+//     const numberInputValue = parseInt(numberInput.value);
+//     numberInput.value = numberInputValue + 1;
+//   } else if (numberInput.value <= 5) {
+//     btn.disabled = true;
+//   } else {
+//     alert("You cannot increase the number above 5");
+
+//     numberInput.value = "";
+//   }
+// });
+
+const jsBook = ["jsBangladesh", "jsBangla", "jsEnglish", "bangla", "english"];
+let javascriptBook = [];
+for (let js of jsBook) {
+  if (js.includes("js")) {
+    javascriptBook.push(js.toLowerCase());
+  }
+}
+console.log(javascriptBook);
+console.log(jsBook[1].toUpperCase());
+
+const number1 = [10, 9, 5, 15, 1, 4, 2, 3, 7, 5, 19, 20, 6];
+const sortNumber = number1.sort(function (a, b) {
+  return a - b;
+});
+console.log(sortNumber);

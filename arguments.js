@@ -32,4 +32,13 @@ function getFullName() {
   return fullName;
 }
 console.log(getFullName("Mohammad", "Sazzad", "Hossain", "Tomal"));
-// 29 number module er 7 number ta ses 8 number ta start
+
+function birdsName() {
+  console.log(arguments);
+  let allBirds = "";
+  for (let birds of arguments) {
+    allBirds = allBirds + " " + birds;
+  }
+  return allBirds;
+}
+console.log(birdsName("doyel", "moyna", "tiya"));
