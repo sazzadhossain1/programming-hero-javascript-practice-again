@@ -12,4 +12,3 @@ const multiply = (num1, num2, num3) => {
   return num1 * num2 * num3;
 };
 console.log(multiply(4, 12, 3));
-// 31 number module er 7 number ta ses 8 number ta start
