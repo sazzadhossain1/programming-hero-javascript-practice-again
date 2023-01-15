@@ -49,4 +49,3 @@ console.log(best, faltu);
 
 const [firstname, lastName] = ["sazzad", "hossain"];
 console.log(firstname, lastName);
-// 32 number module er 3 number ta ses 4 number ta start

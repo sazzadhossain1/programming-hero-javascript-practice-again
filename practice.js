@@ -554,3 +554,134 @@ const sortNumber = number1.sort(function (a, b) {
   return a - b;
 });
 console.log(sortNumber);
+
+console.log("------------- 32_5-1 ------------");
+
+const person = {
+  name: "Sazzad",
+  id: 1,
+};
+
+const numbers = [22, 26, 12, 30];
+const sentence = `My name is ${person.name} and i am ${numbers[1]} years old`;
+console.log(sentence);
+
+const dividingFunction = (num) => {
+  return num / 5;
+};
+console.log(dividingFunction(50));
+
+const toPeramiters = (num1, num2) => {
+  const n1 = num1 + 2;
+  const n2 = num2 + 2;
+
+  const multiply = n1 * n2;
+  return multiply;
+};
+
+console.log(toPeramiters(10, 20));
+
+const threePeramiter = (num1, num2, num3) => {
+  return num1 * num2 * num3;
+};
+console.log(threePeramiter(10, 20, 30));
+
+const multiLineFunction = (name, profetion) => {
+  return `I am ${name} and I am a ${profetion}`;
+};
+console.log(multiLineFunction("Sazzad Hossain", "Front-End Web Developer"));
+
+abc();
+function abc() {
+  console.log("sadfsdafdsf");
+}
+
+// newAbc();
+const newAbc = function () {
+  console.log("sadfsdafdsf");
+};
+
+newAbc();
+
+// newAbc1("asdfsdfdsfsdfsdafsdafsdsf");
+let newAbc1 = () => {
+  console.log("asdfewewewewewewesadfdsf");
+};
+newAbc1();
+
+const numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const mapNumberArray = numbersArray.map((number) => {
+  return number * 5;
+});
+console.log(mapNumberArray);
+
+const mapNumberArrayAgain = numbersArray.map((number) => {
+  return number * 100;
+});
+
+console.log(mapNumberArrayAgain);
+
+// get odd numbers from the numbersArray
+for (let i = 0; i <= numbersArray.length; i++) {
+  if (i % 2 === 1) {
+    console.log(i);
+  }
+}
+console.log("-------------------");
+// Get even number from the numbersArray
+for (let i = 0; i <= numbersArray.length; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+}
+
+console.log("-----------------------");
+// Get odd number by using filter method
+const filterMethod = numbersArray.filter((number) => {
+  if (number % 2 === 1) {
+    return number;
+  }
+});
+console.log(filterMethod);
+
+const procucts = [
+  { name: "water bottle", price: 50, color: "yellow" },
+  { name: "mobile phone", price: 15000, color: "black" },
+  { name: "smart watch", price: 3000, color: "black" },
+  { name: "sticky note", price: 30, color: "pink" },
+  { name: "water glass", price: 3, color: "white" },
+];
+
+const findProduct = procucts.find((procuct) => {
+  if (procuct.price === 3000) {
+    return procuct;
+  }
+});
+console.log(findProduct);
+
+// Destructuring
+const ob = {
+  name: "water bottle",
+  price: 50,
+  color: "yellow",
+};
+
+const { name } = ob;
+console.log(name);
+
+const nm = ["Sazzad", "Hossain", "Tomal", "Mohammad"];
+const [thirdName] = [nm[3]];
+console.log(thirdName);
+
+// Default peramiters
+function defaultPeramiters(num1, num2, num3) {
+  if (num3 === undefined) {
+    num3 = 100;
+  }
+  const sum = num1 + num2 + num3;
+  return sum;
+}
+
+console.log(defaultPeramiters(10, 20));
+// 33 number module er 0 number ta ses 1 number ta start
