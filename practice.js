@@ -684,4 +684,3 @@ function defaultPeramiters(num1, num2, num3) {
 }
 
 console.log(defaultPeramiters(10, 20));
-// 33 number module er 0 number ta ses 1 number ta start
