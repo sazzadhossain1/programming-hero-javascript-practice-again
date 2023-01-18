@@ -65,4 +65,3 @@ const displayMealDetails = (meal) => {
 
   mealDetails.appendChild(div);
 };
-// 34 number module er 7 number ta ses 8 number ta start
