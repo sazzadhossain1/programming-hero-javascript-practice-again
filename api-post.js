@@ -35,4 +35,35 @@ function disabledPost(data) {
     section.appendChild(div);
   }
 }
-// 33 number module er 6 number ta ses 7 number ta start
+
+/////////////////////////////////////////////////
+
+// Post
+//......
+
+function addAPost() {
+  fetch("https://jsonplaceholder.typicode.com/posts", {
+    method: "POST",
+    body: JSON.stringify({
+      title: "My new post",
+      body: "This is my posts",
+      userId: 1,
+    }),
+    headers: { "Content-type": "application/json; charset=UTF-8" },
+  })
+    .then((res) => res.json())
+    .then((data) => console.log(data));
+}
+function addAPost2() {
+  fetch("https://jsonplaceholder.typicode.com/post", {
+    method: "POST",
+    body: JSON.stringify({
+      title: "My new post",
+      body: "This is my posts",
+      userId: 1,
+    }),
+    headers: { "Content-type": "application/json; charset=UTF-8" },
+  })
+    .then((res) => res.json())
+    .then((data) => console.log(data));
+}

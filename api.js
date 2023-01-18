@@ -44,3 +44,20 @@ function displayComment(data) {
     ul.appendChild(li);
   }
 }
+
+document.getElementById("loadAlbum").addEventListener("click", function () {
+  fetch("https://jsonplaceholder.typicode.com/albums")
+    .then((res) => res.json())
+    .then((data) => displayAlbums(data));
+});
+
+function displayAlbums(data) {
+  const ul = document.getElementById("users");
+  for (let albums of data) {
+    console.log(albums);
+    const li = document.createElement("li");
+    li.innerHTML = `Id: ${albums.id}
+     <p>Title: ${albums.title}</p>`;
+    ul.appendChild(li);
+  }
+}
