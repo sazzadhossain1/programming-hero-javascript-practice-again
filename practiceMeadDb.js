@@ -2,10 +2,11 @@ function searchFood() {
   const inputField = document.getElementById("input-field");
   const searchText = inputField.value;
 
-  const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchText}`;
+  const url = `https://www.themealdb.com/api/json/v1/91/search.php?s=${searchText}`;
   fetch(url)
     .then((res) => res.json())
-    .then((data) => displaySearchFood(data.meals));
+    .then((data) => displaySearchFood(data.meals))
+    .catch((error) => console.log(error));
 
   inputField.value = "";
 }
@@ -58,4 +59,3 @@ const displayMealDbDetails = (meal) => {
   `;
   getDetailsDiv.appendChild(div);
 };
-// 34 number module er 7 number ta ses 8 number ta start

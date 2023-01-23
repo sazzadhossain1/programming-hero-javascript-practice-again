@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <script defer src="practiceApi.js"></script>
+    <title>Practice Api</title>
+    <style>
+      .input-filde {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- For jsonPlaceHolder start -->
+    <h1>This is practice Api</h1>
+    <button onclick="loadData()">Lead Data</button>
+    <!--  -->
+
+    <div id="show-div"></div>
+    <!--  -->
+    <div id="comment-div"></div>
+    <hr />
+    <hr />
+    <!-- Jsonplaceholder End -->
+
+    <!-- Meal DB start -->
+    <div class="input-filde">
+      <input id="input" type="text" /><button onclick="loadApi()">
+        Search
+      </button>
+    </div>
+    <!--  -->
+
+    <div id="detals-div" class="m-5 mx-auto"></div>
+    <!--  -->
+    <div
+      id="parent-div"
+      class="row row-cols-1 row-cols-md-3 g-4 w-50 mx-auto m-5"
+    ></div>
+  </body>
+</html>
