@@ -684,3 +684,97 @@ function defaultPeramiters(num1, num2, num3) {
 }
 
 console.log(defaultPeramiters(10, 20));
+
+console.log("----------- practice 36_5-1 ------------");
+
+// Practice 1.
+const mySelf = {
+  name: "Sazzad",
+  age: 26,
+  isStudent: true,
+  studentDetails: {
+    institute: "Programming Hero",
+    id: 1,
+    degination: "Front End Developer",
+  },
+  friends: ["Rifat", "Fahim", "Other"],
+
+  myselfFunction: function () {
+    console.log(this.name);
+  },
+};
+
+mySelf.myselfFunction();
+
+// Practice 2.
+
+const sazzadFullDetails = `${mySelf.name} is ${mySelf.studentDetails.degination} and ${mySelf.name}'s best friend is ${mySelf.friends[1]}`;
+console.log(sazzadFullDetails);
+
+// Practice 3.
+const noPeramiterFunction = () => console.log("This is arrow function");
+noPeramiterFunction();
+
+const onePeramiterFunction = (num) => {
+  const dividedNumber = num / 7;
+  console.log(dividedNumber);
+};
+onePeramiterFunction(70);
+
+const twoPeramiterFunction = (num1, num2) => {
+  const sum = num1 + num2;
+  const dividedVariable = sum / 2;
+  return dividedVariable;
+};
+
+console.log(twoPeramiterFunction(100, 200));
+
+const sumArrowFunction = (num1, num2) => {
+  const numberOne = num1;
+
+  const PlusNumberOne = numberOne + 50;
+  const numberTwo = num2;
+  const PlusNumberTwo = numberTwo + 50;
+
+  const totalSum = PlusNumberOne + PlusNumberTwo;
+  return totalSum;
+};
+
+console.log(sumArrowFunction(50, 100));
+
+console.log("====================================");
+// Practice 4.
+const number2 = [100, 200, 300, 400, 500, 600, 700];
+
+number2.map(function (a) {
+  const dividedNumber = a / 5;
+  console.log(dividedNumber);
+});
+console.log("======= For Each =======");
+number2.forEach((a, i) => {
+  console.log(a, i);
+});
+
+console.log("======= find Method =======");
+number2.find((a) => {
+  console.log(a);
+});
+
+console.log("======= filter Method =======");
+number2.filter((a) => {
+  console.log(a);
+});
+
+const nameObj = {
+  name1: "sazzad",
+  proffetion: "web developer",
+};
+
+// practice 5
+const { name1, proffetion } = nameObj;
+console.log(name1, "Is a", proffetion);
+
+const friend1 = ["sazzad", "Yeasin", "umme", "hossain", "jannat"];
+const [, firstName, , lastName] = friend1;
+
+console.log(firstName, lastName);

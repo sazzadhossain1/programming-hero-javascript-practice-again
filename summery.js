@@ -17,4 +17,4 @@ pen.writePoem("kabab");
 // aBounded();
 
 // this key word
-// 36 number module er 8 number ta ses 9 number ta start
+// this key--- aita abar korte hobe
