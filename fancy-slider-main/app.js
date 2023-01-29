@@ -69,7 +69,11 @@ const createSlider = () => {
   // hide image aria
   imagesArea.style.display = "none";
   const duration = document.getElementById("doration").value || 1000;
-  console.log(duration);
+  if (duration < 0) {
+    alert("Please put a positive value more then 1000");
+    return;
+  }
+
   sliders.forEach((slide) => {
     let item = document.createElement("div");
     item.className = "slider-item";
@@ -121,4 +125,3 @@ searchBtn.addEventListener("click", function () {
 sliderBtn.addEventListener("click", function () {
   createSlider();
 });
-// 40 number module er 5 number ta ses 5 number ta start
