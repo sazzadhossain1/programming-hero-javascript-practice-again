@@ -54,4 +54,3 @@ function displayDataById(data) {
   `;
   displayDiv.appendChild(div);
 }
-// 36 number module er 8 number ta ses 9 number ta start
