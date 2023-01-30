@@ -813,5 +813,3 @@
 // } else {
 //   alert("Ok no problem");
 // }
-
-// // 40_5 number module er 0 number ta ses 1 number ta start
