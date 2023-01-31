@@ -34,6 +34,3 @@ products.filter((product) => {
 // find
 const specialOne = products.find((product) => product.name.includes("n"));
 // console.log(specialOne);
-
-// destrucruting
-// // 42 number module er 3 number ta ses 4 number ta start
