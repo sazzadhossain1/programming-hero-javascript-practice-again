@@ -15,4 +15,3 @@ const addToLocalStorage = () => {
   idInput.value = "";
   valueInput.value = "";
 };
-// // 42 number module er 7 number ta ses 8 number ta start
